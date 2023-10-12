@@ -19,7 +19,7 @@ class Game:
                     self.board[pos] = self.current.value
                     break
                 except ValueError as e:
-                    print(e.args[0])
+                    print(e)
             self.swap_player()
 
         if self.board.is_have_winner:
