@@ -31,4 +31,4 @@ class Game:
         return self.board.is_full or self.board.is_have_winner
 
     def swap_player(self):
-        self.current = self.player1 if (self.current is self.player2) else self.player2
+        self.current = self.player1 if self.current is self.player2 else self.player2
